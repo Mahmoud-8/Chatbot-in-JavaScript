@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    background:#E3F2FD; ;
+}
+.chatbot-toggler {
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+    outline: none;
+    border: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    transition: all 0.2s ease;
+    background: #4aaee8 ;
+}
+body.show-chatbot .chatbot-toggler {
+    transform: rotate(90deg);
+}
+
+.chatbot-toggler span {
+    color: aquamarine;
+    position: absolute;
+}
+.chatbot-toggler span:last-child,
+body.show-chatbot .chatbot-toggler span:first-child {
+    opacity: 0;
+}
+body.show-chatbot .chatbot-toggler span:last-child {
+    opacity: 1;
+}
+
+.chatbot {
+    position: fixed;
+    right: 35px;
+    bottom: 90px;
+    width: 412px;
+    background: #fff;
+    border-radius: 15px;
+   /*  overflow: hidden;
+    opacity: 0; */
+    pointer-events: none;
+    transform: scale(0.5);
+    transform-origin: bottom right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2),  0 32px 64px -48px rgba(0,0,0,0.5);
+    transition: all 0.1s ease;
+
+}
+body.show-chatbot .chatbot {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.chatbot header {
+    padding: 16px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #4aaee8 ;
+    box-shadow: 0 2px 10 px rgb(0, 0, 0, 0.1);
+}
+.chatbot header span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    display: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+header h2 {
+    font-size: 18px;
+
+}
+
+.chatbot .chatbox {
+    overflow-y: auto;
+    height: 510px;
+    padding: 30px 20px 100px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+.chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+.chatbox .chat {
+    display: flex;
+    list-style: none;
+}
+
+.chatbox .outgoing{
+    margin: 20px;
+    justify-content: flex-end;
+}
+
