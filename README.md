@@ -1,5 +1,5 @@
 # Chatbot in JavaScript
-![Chatbot](path/to/image/Screenshot%202023-07-22%20at%205.58.28%20PM.png)
+![Chatbot](![Alt text](<Screenshot 2023-07-22 at 5.58.28 PM.png>))
 
 This project is a simple chatbot implemented in JavaScript. The chatbot communicates with users by providing responses generated using the OpenAI GPT-3.5 Turbo language model. It is designed to provide helpful assistance based on the user's input.
 
