@@ -1,11 +1,11 @@
-// JavaScript
+
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
-let userMessage = null; // Variable to store user's message
+let userMessage = null; 
 const API_KEY = "sk-qumsymig67ixyuv8ayixt3blbkfjrb5bc2xn6pdndyqkxxbb"; 
 
 const inputInitHeight = chatInput.scrollHeight;
