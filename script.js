@@ -41,6 +41,7 @@ const generateResponse = (chatElement) => {
     fetch(API_URL, requestOptions)
         .then(res => res.json())
         .then(data => {
+            console.log(data);
             if (data && data.choices && data.choices.length > 0 && data.choices[0].message && data.choices[0].message.content) {
                 messageElement.textContent = data.choices[0].message.content.trim();
             } else {
