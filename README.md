@@ -34,3 +34,8 @@ The JavaScript code in `script.js` is responsible for handling user interactions
 
 - The chatbot UI is designed with a simple layout, including a chat window, input area, and toggle button.
 - The chatbot's responses are generated using the powerful GPT-3.5 Turbo model from OpenAI, making it capable of providing more contextually relevant answers.
+- Note: Potential API Key Validity Issues
+
+- I want to bring to your attention that there might be instances when the provided API key for the OpenAI API could become invalid. This can happen due to various reasons, 
+ such as the key being revoked, expired, or undergoing maintenance. In such cases, you may experience difficulties accessing the OpenAI API and encounter error messages, 
+ including the 401 Unauthorized status code.
